@@ -1,0 +1,1291 @@
+﻿/*
+ Project Name : Travel Listing
+ Author Company : Theme Foundry
+ Project Date: 29-09-2017
+ Developer :   sufyan319@outlook.com
+ */
+/*
+================================================
+Fonts
+================================================
+*/
+
+@font-face {
+    font-family: nirmala;
+    src: url(../fonts/Nirmala.ttf);
+}
+/*
+================================================
+Common Css
+================================================
+*/
+
+* {
+    position: relative;
+    outline: 0!important;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: all ease-in-out .3s;
+    -webkit-transition: all ease-in-out .3s;
+}
+
+:before,
+:after {
+    transition: all ease-in-out .3s;
+    -webkit-transition: all ease-in-out .3s;
+}
+
+section,
+header {
+    transition: all ease-in-out 0s;
+    -webkit-transition: all ease-in-out 0s;
+    -moz-transition: all ease-in-out 0s;
+    -ms-transition: all ease-in-out 0s;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: nirmala;
+    color: #666666;
+}
+
+p,
+li,
+a {
+    line-height: 26px;
+    margin: 0;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.row {
+    clear: both;
+}
+
+.container,
+.container-fluid {
+    clear: both;
+}
+
+.rev_slider_wrapper * {
+    transition: none!important;
+    -webkit-transition: none!important;
+    -moz-transition: none!important;
+    -ms-transition: none!important;
+}
+
+.tp-fullwidth-forcer {
+    z-index: -1;
+}
+
+.bg-color {
+    background-color: #f6f6f6;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #eee;
+}
+
+.border-top {
+    border-top: 1px solid #eee;
+}
+
+.flex {
+    display: flex;
+}
+
+.text p {
+    margin-bottom: 15px;
+}
+
+.width-600 {
+    width: 600px;
+}
+
+.width-770 {
+    width: 770px;
+    left: -300px!important;
+}
+
+
+
+
+
+
+/*
+===========================================
+button style
+===========================================
+*/
+.btn {
+    background-color: #20273a;
+    border: medium none;
+    border-radius: 0;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 12px 11px;
+}
+.btn:hover {
+    background-color: transparent;
+}
+
+.btn.radius-2x {
+    border-radius: 30px;
+}
+
+.btn.radius-4x {
+    border-radius: 5px;
+}
+
+.btn.yellow {
+    background-color: #ffbc00;
+}
+
+.btn.yellow:hover {
+    background-color: transparent;
+    border-color: #ffbc00;
+    color: #ffbc00;
+}
+
+.btn.black {
+    background-color: #000;
+}
+
+.btn.black:hover {
+    background-color: transparent;
+    border-color: #000;
+    color: #000;
+}
+
+.btn.black * {
+    color: #fff;
+}
+
+.btn.full-width {
+    width: 100%;
+}
+
+
+.btn.blue {
+    background-color: #5eb4e7;
+}
+
+.btn.red {
+    background-color: #ff6952;
+}
+
+.btn.white {
+    background-color: #fff;
+    color: #000;
+}
+
+.btn.black {
+    background-color: #222;
+    color: #fff;
+}
+
+.btn.rgba {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+.btn.appoint {
+    font-size: 18px;
+    padding: 25px;
+}
+
+.button-item:not(:nth-last-child(-n+3)) {
+    margin-bottom: 40px;
+}
+
+.btn.md-size {
+    padding: 15px 50px;
+}
+
+
+
+.btn.transparent {
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+
+.btn.shadow {
+    background-color: #fff;
+    box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.1);
+    color: #000;
+}
+
+.btn.bg-color {
+    color: #000;
+}
+
+
+/*
+===========================================
+Accordion
+===========================================
+*/
+
+.list li {
+    line-height: 36px;
+}
+
+.list.dots li::before {
+    border-radius: 50%;
+    content: "";
+    display: inline-block;
+    height: 6px;
+    margin-right: 10px;
+    width: 6px;
+}
+
+.list-block:not(:nth-last-child(-n+3)) {
+    margin-bottom: 40px;
+}
+
+
+
+.sm-icon li::before {
+    content: "";
+    font-family: fontawesome;
+    margin-right: 10px;
+    top: 0;
+}
+
+.lg-icon li::before {
+    border-radius: 50%;
+    color: #fff;
+    content: "";
+    display: inline-block;
+    font-family: fontawesome;
+    font-size: 11px;
+    height: 20px;
+    line-height: 20px;
+    margin-right: 10px;
+    text-align: center;
+    width: 20px;
+}
+
+
+.lg-icon.black li::before {
+    color: #fff;
+    background-color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+===========================================
+main heading
+===========================================
+*/
+
+.v1 .main-heading h2 {
+    color: #000;
+    font-size: 48px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    margin-top: 0;
+    text-transform: capitalize;
+}
+
+
+.main-heading h3 {
+    color: #000;
+    display: inline-block;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 0 0 15px;
+    text-transform: uppercase;
+    line-height: 36px;
+}
+
+.main-heading p {
+    color: #999;
+    font-family: nirmala;
+}
+
+
+
+
+/*======================================*/
+
+img {
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.padding-left {
+    padding: 0 0 0 15px;
+}
+
+.padding-right {
+    padding: 0 15px 0 0;
+}
+.half-padding{
+    padding: 0 7.5px;
+}
+.half-padding-right{
+    padding: 0 7.5px 0 0;
+}
+.half-padding-left{
+    padding: 0 0 0 7.5px;
+}
+.space {
+    padding: 100px 0;
+}
+
+.space-50 {
+    padding: 50px 0;
+}
+
+.space-top {
+    padding: 100px 0 0;
+}
+
+.space-bottom {
+    padding: 0 0 100px 0;
+}
+
+.small-space {
+    margin: 10px 0;
+    display: inline-block;
+    width: 100%;
+}
+
+section {
+    overflow: hidden;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+.radius-2x {
+    border-radius: 50%;
+}
+
+.radius-4x {
+    border-radius: 5px;
+}
+
+
+
+
+
+
+/*
+===========================================
+Alert
+===========================================
+*/
+
+.alert {
+    border-radius: 0;
+    color: #fff;
+}
+
+
+.alert-info {
+    background-color: #05b4e9;
+}
+
+.alert-danger {
+    background-color: red;
+}
+
+.alert-warning {
+    background-color: #FF7200;
+}
+
+
+/*
+===========================================
+Models
+===========================================
+*/
+
+.modal-content {
+    border: medium none;
+    border-radius: 0;
+}
+
+.modal-title {
+    color: #fff;
+}
+
+
+/*
+===========================================
+Form style
+===========================================
+*/
+
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+select.form-control {
+    background-color: #0e121e;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    color: #999;
+    display: block;
+    font-size: 20px;
+    font-style: italic;
+    height: 50px;
+    line-height: 1.42857;
+    padding: 6px 12px;
+    text-align: center;
+}
+
+input[type="radio"],
+.checkbox input[type="radio"],
+.checkbox input[type="checkbox"],
+input[type="checkbox"] {
+    display: none;
+    margin-left: 0;
+    margin-top: 3px;
+    position: absolute;
+}
+
+.checkbox label::before {
+    border: 1px solid #dcdcdc;
+    content: "";
+    height: 20px;
+    left: 0;
+    position: absolute;
+    width: 20px;
+}
+
+.checkbox label::after {
+    background-color: #f0f0f0;
+    border: 1px solid #dcdcdc;
+    content: "";
+    height: 12px;
+    left: 0;
+    margin: 4px;
+    position: absolute;
+    width: 12px;
+}
+
+
+
+.radio label,
+.checkbox label {
+    color: #282828;
+    font-size: 13px;
+    font-weight: normal;
+    padding-left: 30px;
+}
+
+.form-control::-moz-placeholder {
+    color: #fff;
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.form-control:-ms-input-placeholder {
+    color: #999;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: #999;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    font-style: italic;
+    text-transform: capitalize;
+}
+.results .form-control::-moz-placeholder {
+    text-align: left;
+}
+
+.results .form-control:-ms-input-placeholder {
+    text-align: left;
+}
+
+.results .form-control::-webkit-input-placeholder {
+    text-align: left;
+}
+
+textarea.form-control {
+    background-color: #f6f6f6;
+    border: 1px solid transparent;
+    border-radius: 0;
+    box-shadow: none;
+    height: 150px;
+    resize: none;
+}
+
+input:focus,
+textarea.form-control:focus,
+select:focus {
+    border-color: #000 !important;
+    box-shadow: none !important;
+    background-color: #000 !important;
+}
+
+select.form-control {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #f0f0f0;
+    /* fallback color if gradients are not supported */
+    background-image: url("../images/select-arrow.png"), -webkit-linear-gradient(top, #f0f0f0, #f0f0f0);
+    /* For Chrome and Safari */
+    background-image: url("../images/select-arrow.png"), -moz-linear-gradient(top, #f0f0f0, #f0f0f0);
+    /* For old Fx (3.6 to 15) */
+    background-image: url("../images/select-arrow.png"), -ms-linear-gradient(top, #f0f0f0, #f0f0f0);
+    /* For pre-releases of IE 10*/
+    background-image: url("../images/select-arrow.png"), -o-linear-gradient(top, #f0f0f0, #f0f0f0);
+    /* For old Opera (11.1 to 12.0) */
+    background-image: url("../images/select-arrow.png"), linear-gradient(to bottom, #f0f0f0, #f0f0f0);
+    /* Standard syntax; must be last */
+    background-position: 96% center;
+    background-repeat: no-repeat;
+}
+
+select::-ms-expand {
+    /* for IE 11 */
+    display: none;
+}
+
+.datepicker table tr td.active:active,
+.datepicker table tr td.active.highlighted:active,
+.datepicker table tr td.active.active,
+.datepicker table tr td.active.highlighted.active,
+.open>.dropdown-toggle.datepicker table tr td.active,
+.open>.dropdown-toggle.datepicker table tr td.active.highlighted {
+    color: #ffffff;
+}
+
+.datepicker table {
+    width: 100%;
+}
+
+.datepicker-dropdown {
+    min-width: 390px!important;
+    padding: 20px!important;
+}
+
+.datepicker table tr td.old,
+.datepicker table tr td.new {
+    border-radius: 50%;
+    color: #999999;
+    height: 40px;
+    padding: 10px;
+    width: 40px;
+}
+
+.datepicker-days .prev,
+.datepicker-days .next {
+    border: 1px solid #eee;
+    border-radius: 50%;
+    display: inline-block;
+    height: 40px;
+    line-height: 37px;
+    padding: 0;
+    width: 40px;
+}
+
+.bootstrap-select {
+    height: 50px;
+}
+
+.bootstrap-select .btn {
+    background-color: #0b0f1a!important;
+    color: #fff!important;
+    font-family: "nirmala"!important;
+    height: 50px!important;
+    letter-spacing: 0!important;
+    padding: 0!important;
+    text-transform: capitalize!important;
+    border: none;
+    text-align: center;
+    font-size: 20px;
+}
+
+.about-block .bootstrap-select .btn span.bs-caret,
+.banner-block .bootstrap-select .btn span.bs-caret {
+    position: absolute;
+    right: 20px;
+}
+
+.bootstrap-select.btn-group .dropdown-toggle .caret::after {
+    content: "\f0d7";
+    font-family: fontawesome;
+    font-size: 14px;
+    position: absolute;
+    right: 15px;
+    top: -7px;
+    color: #00dbff;
+}
+
+.bootstrap-select.btn-group .dropdown-toggle .caret {
+    border: medium none;
+    margin-top: -2px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    vertical-align: middle;
+}
+
+.bootstrap-select.btn-group .dropdown-toggle .filter-option {
+    font-weight: 700;
+    padding-right: 20px;
+    text-align: center;
+    font-style: italic;
+}
+
+.bootstrap-select.btn-group .dropdown-menu {
+    padding: 0;
+}
+.bootstrap-select .dropdown-menu li > a {
+    padding: 10px 13px;
+}
+/*
+==========================================
+Vertical align center
+==========================================
+*/
+
+.center{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+
+
+
+/*
+===========================================
+Social icon style
+===========================================
+*/
+.fa.fa-facebook {
+    background-color: #3b5998;
+}
+.fa.fa-twitter {
+    background-color: #55acee;
+}
+/*
+===========================================
+Pre Loader
+===========================================
+*/
+
+#pre_loader {
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 999999999;
+}
+
+#pre_loader.down {
+    display: none;
+}
+
+/*
+===========================================
+Background Image
+===========================================
+*/
+body{
+    background-image: url("../images/bg.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-fluid {
+    width: 95%;
+}
+
+/*
+===========================================
+Header
+===========================================
+*/
+.header-block li,
+.header-block li a{
+    color: #ffffff;
+    display: inline-block;
+    font-style: italic;
+    font-weight: 600;
+}
+header .time img {
+    display: inline-block;
+    float: left;
+    width: 40px;
+}
+header .time #currentDate {
+    color: #ffffff;
+    display: inline-block;
+    float: left;
+    font-size: 35px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    line-height: 39px;
+    margin-left: 20px;
+}
+.header-block .time {
+    display: inline-block;
+    margin-top: 10px;
+}
+header {
+    background-color: #0c101b;
+}
+.header-block li:not(:last-child) {
+    margin-right: 15px;
+}
+.header-block li .icon i {
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 20px;
+    height: 36px;
+    line-height: 35px;
+    text-align: center;
+    width: 36px;
+}
+.header-block .social li:nth-child(2) {
+    margin-right: 5px;
+}
+header .social {
+    margin-top: 9px;
+}
+.header-block li .btn {
+    padding: 17px 12px;
+}
+.header-block li .icon i:hover {
+    transform: rotateY(360deg);
+    -webkit-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    transition: all 0.7s ease-in-out 0s;
+    -webkit-transition: all 0.7s ease-in-out 0s;
+    -o-transition: all 0.7s ease-in-out 0s;
+}
+.header-block .inner::before {
+    background-color: #20273a;
+    bottom: -17px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: -6px;
+    transform: perspective(300px) rotateX(-38deg);
+}
+
+/*
+===========================================
+Footer
+===========================================
+*/
+footer {
+    bottom: 0;
+    left: 0;
+    padding-bottom: 10px;
+    position: absolute;
+    right: 0;
+}
+.footer-block img.br-logo {
+    height: 50px;
+    margin-left: 20px;
+}
+footer .dell-logo {
+    margin-left: 20px;
+    width: 80px;
+}
+.footer-block p {
+    color: #ffffff;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+/*
+===========================================
+Login
+===========================================
+*/
+
+.login-block .inner {
+    margin: auto;
+    width: 85%;
+}
+.login-block .login-inner {
+    left: 0;
+    padding: 0 70px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.heading h3 {
+    color: #ffc21d;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.login-block .fa-facebook {
+    border-radius: 3px;
+    color: #191e33;
+    font-size: 34px;
+    font-weight: bold;
+    height: 40px;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    padding-top: 9px;
+    width: 40px;
+}
+.form-group.reg .register {
+    color: #ffffff;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px;
+    text-decoration: underline;
+}
+button[type="submit"] {
+    background-color: rgba(0, 0, 0, 0);
+    border: medium none;
+    color: #ffc21d;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.login-block .fa-facebook:hover {
+    color: #ffc21d;
+}
+.login-block .forget {
+    margin-top: 30px;
+}
+.login-block .forget p {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+}
+.login-block .forget p  a{
+    color: #e51937;
+}
+.login-block .footer a.back > img {
+    margin-left: 15px;
+    width: 48px;
+}
+.login-block .footer a.setting > img {
+    margin-right: 14px;
+    width: 29px;
+}
+.login-block .footer {
+    margin-top: 54px;
+}
+/*
+===========================================
+Register
+===========================================
+*/
+
+.register-block > .inner {
+    margin: auto;
+    width: 90%;
+}
+.register-block .register-inner {
+    bottom: 0;
+    left: 0;
+    padding: 0 60px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.register-block .form-content {
+    display: inline-block;
+    margin: 48px 0;
+    width: 100%;
+}
+span.border {
+    background-color: #00182f;
+    bottom: 3px;
+    left: 3px;
+    position: absolute;
+    top: 3px;
+    width: 3px;
+    z-index: 999;
+}
+#fire h5 {
+    color: #ffffff;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 600;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+.register-block .form-content h3 {
+    color: #ffffff;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 28px;
+    margin: 0;
+    text-transform: uppercase;
+}
+.register-block .well img {
+    margin-right: 20px;
+    width: 80px;
+}
+.register-block .well {
+    background-color: #272c46;
+    border: 2px solid #454b68;
+    border-radius: 0;
+    margin: 15px 0;
+    padding: 8px 20px;
+}
+.register-block .well-text p {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+.register-block .well-text a {
+    color: #ffffff;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.register-block .well-text {
+    margin-top: 3px;
+}
+.results .form-content form p {
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.results .form-content .btn {
+    background-color: #0c59b9;
+    color: #ffffff;
+    font-size: 16px;
+    letter-spacing: 0;
+    padding: 7px 15px 7px 7px;
+}
+.results .form-content .fa.fa-facebook {
+    background-color: #ffffff;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    margin-right: 3px;
+    width: 20px;
+}
+.results .form-content .btn i {
+    margin-right: 6px;
+}
+.results .register-block .form-content {
+    margin: 27px 0;
+}
+.results .footer .again {
+    color: #ffc21d;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.register-block .footer .back img {
+    margin-left: 12px;
+    margin-top: 6px;
+    width: 40px;
+}
+.register-block .footer .setting > img {
+    margin-right: 18px;
+    margin-top: 6px;
+    width: 24px;
+}
+
+/*
+===========================================
+Responsive
+===========================================
+*/
+@media (max-width: 767px) {
+    .wrapper {
+        height: auto!important;
+    }
+    .header-block li, .header-block li a {
+        font-size: 13px;
+    }
+    .header-block li:not(:last-child) {
+        margin-right: 3px;
+    }
+    .header-block li .btn {
+        padding: 7px 12px;
+    }
+    .header-block:last-child {
+        display: none;
+    }
+    footer {
+        position: relative;
+    }
+    header .time #currentDate {
+        font-size: 15px;
+        line-height: 15px;
+        margin-left: 10px;
+    }
+    header .time img {
+        width: 18px;
+    }
+    .footer-block p {
+        font-size: 13px;
+    }
+    .footer-block img.br-logo {
+        height: 18px;
+        margin-left: 3px;
+    }
+    footer .dell-logo {
+        margin-left: 1px;
+        width: 39px;
+    }
+    .login-block .inner {
+        width: 100%;
+    }
+    .login-block .login-inner {
+        padding: 0 19px;
+    }
+    .login-block .forget p {
+        font-size: 12px;
+    }
+    .login-block .fa-facebook {
+        font-size: 18px;
+        height: 25px;
+        margin-bottom: 0;
+        margin-top: 11px;
+        padding-top: 9px;
+        width: 25px;
+    }
+    select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], select.form-control {
+        font-size: 13px;
+        height: 30px;
+    }
+
+    .form-control::-moz-placeholder {
+        font-size: 13px;
+    }
+
+    .form-control:-ms-input-placeholder {
+        font-size: 13px;
+    }
+
+    .form-control::-webkit-input-placeholder {
+        font-size: 13px;
+    }
+    .form-group.reg .register {
+        font-size: 14px;
+        margin-top: 0;
+    }
+    .login-block .footer {
+        margin-top: 26px;
+    }
+    .heading h3 {
+        font-size: 14px;
+        margin-top: 12px;
+    }
+    button[type="submit"] {
+        font-size: 14px;
+    }
+    #login,
+    #register{
+        height: auto!important;
+        margin: 30px 0;
+    }
+    .login-block .footer a.back > img {
+        margin-left: 34px;
+        width: 28px;
+    }
+    .login-block .footer a.setting > img {
+        margin-right: 39px;
+        width: 18px;
+    }
+    .login-block .inner > img {
+        width: 290px;
+    }
+    .register-block .register-inner {
+        padding: 0 20px;
+    }
+    .register-block .form-content {
+        margin: 33px 0;
+    }
+    .register-block > .inner {
+        margin: auto;
+        width: 100%;
+    }
+    .register-block .inner > img {
+        height: 600px;
+        width: 290px;
+    }
+    .bootstrap-select {
+        height: 30px!important;
+    }
+    .bootstrap-select .btn {
+        font-size: 14px;
+        height: 30px!important;
+    }
+    .half-padding-right {
+        padding: 0;
+    }
+    .half-padding {
+        padding: 0;
+    }
+    .half-padding-left {
+        padding: 0;
+    }
+    .register-block .form-group .col-sm-4 {
+        margin-bottom: 15px;
+    }
+    .register-block .heading h3 {
+        font-size: 11px;
+        margin-top: 21px;
+    }
+    .register-block .footer .back img {
+        margin-left: 1px;
+        margin-top: 0;
+        width: 19px;
+    }
+    .register-block .footer .setting > img {
+        margin-right: 3px;
+        margin-top: 6px;
+        width: 16px;
+    }
+    .register-block button[type="submit"] {
+        font-size: 12px;
+        margin-top: 9px;
+    }
+    .register-block .form-content h3 {
+        font-size: 11px;
+        line-height: 17px;
+    }
+    .register-block .well img {
+        margin-right: 10px;
+        margin-top: 11px;
+        width: 53px;
+    }
+    .register-block .well {
+        padding: 8px;
+    }
+    .register-block .well-text p {
+        font-size: 11px;
+        line-height: 20px;
+    }
+    .register-block .well-text a {
+        font-size: 12px;
+    }
+    .register-block .well-text {
+        margin-left: 63px;
+        margin-top: 3px;
+    }
+    .results .form-content .btn {
+        padding: 3px 15px 3px 7px;
+    }
+    .results .register-block .inner > img {
+        height: 409px;
+    }
+    .results .footer .again {
+        font-size: 13px;
+    }
+    .container-fluid {
+        width: 100%;
+    }
+}
+@media (min-width: 768px)and (max-width: 1024px) {
+    header .time #currentDate {
+        font-size: 19px;
+        line-height: 19px;
+        margin-left: 9px;
+    }
+    header .time img {
+        width: 22px;
+    }
+    .container-fluid {
+        width: 100%;
+    }
+    .header-block li, .header-block li a {
+        font-size: 10px;
+    }
+    .header-block li .btn {
+        padding: 15px 10px;
+    }
+    .header-block li:not(:last-child) {
+        margin-right: 0;
+    }
+    .header-block li .icon i {
+        font-size: 14px;
+        height: 30px;
+        line-height: 30px;
+        width: 30px;
+    }
+    .header-block:last-child li:not(:last-child) {
+        margin-right: 6px;
+    }
+    .register-block > .inner {
+        margin: auto;
+        width: 94%;
+    }
+    .register-block .inner > img {
+        width: 677px;
+    }
+    .login-block .inner {
+        margin: auto;
+        width: 469px;
+    }
+}
